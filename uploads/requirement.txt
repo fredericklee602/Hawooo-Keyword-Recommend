@@ -1,0 +1,7 @@
+sentence_transformers
+weaviate_client
+langchain
+flask
+flask_cors
+torch
+
