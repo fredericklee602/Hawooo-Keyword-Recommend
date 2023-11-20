@@ -47,7 +47,13 @@ client.schema.create(schema)
 *  `test_data`：於Web UI上傳資料時可以測試用資料。
 
 ## VUE.JS Web UI
-* 
+1. 詞彙向量化模型訓練：上傳訓練資料集，並且開始訓練SBERT。
+2. 建立詞彙向量資料庫：使用訓練好的SBERT模型做Embedding，建立詞彙向量資料庫。
+3. 從Vector DB推薦想要找的可能同義詞，並將其整理在同義詞庫中。
+### 首頁
+![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/home.PNG)
+### 推薦同義詞庫
+![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/synonyms.PNG)
 
 
 
