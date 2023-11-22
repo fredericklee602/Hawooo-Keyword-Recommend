@@ -1,9 +1,25 @@
-![image](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/assets/37622644/cd54e925-5c44-4816-82c2-c1f3b864a36c)
 # Searching-for-exact-keyword-using-sbert-models
-AI鬥智賽-好物飛行電商平台題目。解決搜尋字串正確性問題。
+## AI鬥智賽-好會飛網路股份有限公司
+- 題目：透過NLP技術分辨消費者輸入的搜尋字串是否正確，以提高搜尋結果之正確性。
+## Hawoo電商可能問題
+- 別字輸入
+- 用戶可能因為輸入錯別字，在網站的搜索欄中輸入查詢詞時無法得到正確或相似、相關結果。
 
+![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo1.png)
+- 商品/品牌之多重名稱
+- 商品可能有品牌的同義詞，但用戶有可能擇一輸入，在平台上會找到不同的結果。
 
+![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo2.png)
 
+- 字串比對的侷限
+- 商品品牌必須完全正確才有最多結果，用戶有可能需要多次輸入才能在平台上找到目標商品。
+
+![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo3.png)
+
+- 無法單次查詢多個詞彙
+- 一般常見的入口網站搜尋體驗可透過空白間隔進行複數查詢，但現平台無法以同樣方式檢索。
+
+![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo4.png)
 
 ### Vector DB - Weaviate
 
