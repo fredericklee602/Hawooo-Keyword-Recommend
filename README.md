@@ -86,7 +86,7 @@ client.schema.create(schema)
 2. 商品/品牌之多重名稱->引進同義詞檢索
 3. 字串比對的侷限->引進斷詞機制
 4. 無法單次查詢多個詞彙->引進布林檢索
-### 導入搜尋引擎Gufonet
+### 搜尋引擎Gufonet
 - 校正用戶輸入條件
 - 左圖為出題單位既有檢索結果，右圖為Gufonet校正輸入之技術效果範例。
 
@@ -110,7 +110,7 @@ client.schema.create(schema)
 
 <img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo8.png">
 
-## 導入成效示意
+## 成效示意
 - 啟用檢索引擎 -> 檢索結果上升**28.43**倍
 - 加入同義詞 -> 每項檢索詞結果增幅**6%**
 - A/B Test實測 點擊率提升 **4.5%**
