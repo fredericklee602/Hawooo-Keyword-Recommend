@@ -1,7 +1,7 @@
-# Searching-for-exact-keyword-using-sbert-models
+![image](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/assets/37622644/95b67b58-3d96-4a2d-a59e-7f08db28ae27)# Searching-for-exact-keyword-using-sbert-models
 ## AI鬥智賽-好會飛網路股份有限公司
 - 題目：透過NLP技術分辨消費者輸入的搜尋字串是否正確，以提高搜尋結果之正確性。
-## Hawoo電商可能問題
+### Hawoo電商可能問題
 - 別字輸入
 - 用戶可能因為輸入錯別字，在網站的搜索欄中輸入查詢詞時無法得到正確或相似、相關結果。
 
@@ -20,6 +20,22 @@
 - 一般常見的入口網站搜尋體驗可透過空白間隔進行複數查詢，但現平台無法以同樣方式檢索。
 
 ![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo4.png)
+
+## 如何解決出題廠商痛點？
+1. 別字輸入->校正用戶輸入條件
+2. 商品/品牌之多重名稱->引進同義詞檢索
+3. 字串比對的侷限->引進斷詞機制
+4. 無法單次查詢多個詞彙->引進布林檢索
+### 導入搜尋引擎Gufonet
+- 校正用戶輸入條件
+- 左圖為出題單位既有檢索結果，右圖為Gufonet校正輸入之技術效果範例。
+
+![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo5.png)
+
+### 改動前是依照SQL LIKE做搜尋
+- 原Hawooo網站只使用DB的SQL LIKE方法，得完整相同字串才可以搜尋到相關產品。
+
+![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo6.png)
 
 ### Vector DB - Weaviate
 
