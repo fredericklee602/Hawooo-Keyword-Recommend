@@ -1,5 +1,9 @@
+![image](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/assets/37622644/cd54e925-5c44-4816-82c2-c1f3b864a36c)
 # Searching-for-exact-keyword-using-sbert-models
 AI鬥智賽-好物飛行電商平台題目。解決搜尋字串正確性問題。
+
+
+
 
 ### Vector DB - Weaviate
 
