@@ -53,30 +53,33 @@ client.schema.create(schema)
 3. 從Vector DB推薦想要找的可能同義詞，並將其整理在同義詞庫中。
 
 #### 首頁
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/home.PNG)
+
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/home.PNG">
 
 #### 推薦同義詞庫
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/synonyms.PNG)
+
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/synonyms.PNG">
 
 ### Hawoo電商可能問題
 - 別字輸入
 - 用戶可能因為輸入錯別字，在網站的搜索欄中輸入查詢詞時無法得到正確或相似、相關結果。
 
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo1.png)
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo1.png">
+
 - 商品/品牌之多重名稱
 - 商品可能有品牌的同義詞，但用戶有可能擇一輸入，在平台上會找到不同的結果。
 
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo2.png)
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo2.png">
 
 - 字串比對的侷限
 - 商品品牌必須完全正確才有最多結果，用戶有可能需要多次輸入才能在平台上找到目標商品。
 
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo3.png)
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo3.png">
 
 - 無法單次查詢多個詞彙
 - 一般常見的入口網站搜尋體驗可透過空白間隔進行複數查詢，但現平台無法以同樣方式檢索。
 
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo4.png)
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo4.png">
 
 ## 如何解決出題廠商痛點？
 1. 別字輸入->校正用戶輸入條件
@@ -87,33 +90,33 @@ client.schema.create(schema)
 - 校正用戶輸入條件
 - 左圖為出題單位既有檢索結果，右圖為Gufonet校正輸入之技術效果範例。
 
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo5.png)
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo5.png">
 
 ### Before (依照SQL LIKE做搜尋)
 - 原Hawooo網站只使用DB的SQL LIKE方法，得完整相同字串才可以搜尋到相關產品。
 
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo6.png)
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo6.png">
 
 ### AI技術應用流程示意
 - SBERT 訓練過程。
 - 導入Weaviate Vector DB流程。
 - 推薦可能同義詞，選取同義詞匯出同義詞庫。
 
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo7.png)
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo7.png">
 
 ### After (搜尋引擎 + AI Model)
 - AI推薦可能同義詞庫後再匯入到Gufonet。
 - 由Gufonet搜尋引擎做產品推薦。
 
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo8.png)
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo8.png">
 
 ## 導入成效示意
 - 啟用檢索引擎 -> 檢索結果上升**28.43**倍
 - 加入同義詞 -> 每項檢索詞結果增幅**6%**
 - A/B Test實測 點擊率提升 **4.5%**
 
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo9.png)
-![FLOW](https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo10.png)
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo9.png">
+<img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo10.png">
 
 
 
