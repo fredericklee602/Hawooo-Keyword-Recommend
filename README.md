@@ -61,7 +61,7 @@ client.schema.create(schema)
 <img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/synonyms.PNG">
 
 ### Hawoo電商可能問題
-- 別字輸入
+- 錯別字輸入
 - 用戶可能因為輸入錯別字，在網站的搜索欄中輸入查詢詞時無法得到正確或相似、相關結果。
 
 <img width="700" src="https://github.com/fredericklee602/Searching-for-exact-keyword-using-sbert-models/blob/main/sceenshot/hawoo1.png">
